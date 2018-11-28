@@ -7,10 +7,10 @@
    let actualYear = date.getFullYear()
 
    // GET ALL ELEMENTS
-   let elements = document.querySelectorAll(".element")
+   let elements = document.querySelectorAll("div[data-date]")
 
    // CHECK EACH ONE
-   elements.forEach(function(element, index) {
+   elements.forEach(function(element) {
 
       // GET DATA-DATE ATTRIBUTE
       let elementDate = element.dataset.date
@@ -25,7 +25,7 @@
       if (elementYear > actualYear) {
          return
       } else if (elementYear < actualYear) {
-         element.style.display = "none"
+         element.classList.add("event-hide")
          return
       } else {
 
@@ -33,7 +33,7 @@
          if (elementMonth > actualMonth) {
             return
          } else if (elementMonth < actualMonth) {
-            element.style.display = "none"
+            element.classList.add("event-hide")
             return
          } else {
 
@@ -41,7 +41,7 @@
             if (elementDay >= actualDay) {
                return
             } else {
-               element.style.display = "none"
+               element.classList.add("event-hide")
             }
          }
       }

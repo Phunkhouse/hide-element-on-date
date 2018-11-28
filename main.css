@@ -12,6 +12,10 @@ body {
    margin: 10px;
 }
 
+.event-hide {
+   display: none;
+}
+
 #el-1 { background-color: tomato; }
 #el-2 { background-color: skyblue; }
 #el-3 { background-color: yellowgreen; }
