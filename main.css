@@ -1,0 +1,18 @@
+body {
+   background-color: linen;
+}
+
+.container {
+   display: flex;
+}
+
+.element {
+   height: 100px;
+   width: 100px;
+   margin: 10px;
+}
+
+#el-1 { background-color: tomato; }
+#el-2 { background-color: skyblue; }
+#el-3 { background-color: yellowgreen; }
+#el-4 { background-color: olivedrab; }
